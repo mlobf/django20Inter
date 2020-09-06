@@ -25,4 +25,5 @@ def lerbanco(nome):
 def fname(request, nome):
     result = lerbanco(nome)
     print(result)
-    return HttpResponse("A pessoa " + str(nome).capitalize() +" foi encontrada, ela tem " + str(result['idade']) + ' anos.')
+    return HttpResponse(
+        "A pessoa " + str(nome).capitalize() + " foi encontrada, ela tem " + str(result['idade']) + ' anos.')
